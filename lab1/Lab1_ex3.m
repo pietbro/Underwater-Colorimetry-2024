@@ -6,4 +6,4 @@ stage = 4;
 
 cd('yourpath...\Underwater-colorimetry-main\camera-pipeline-nonUI-master')%change to your path
 dng2tiff(dngPath, tiffSavePath, stage);
-tiff2png(CompresedPngPath, tiffSavePath)
+tiff2png(CompresedPngPath, tiffSavePath);
