@@ -59,7 +59,7 @@ rgb = getradiance(refl_spectra, light_spectra, cam.data(:,2:end));
 mcc = visualizeColorChecker(mat2gray(rgb));
 figure;imshow(mcc)
 % This line saves the figure
-saveas(gcf,'Materials/Macbeth_no_wb.png');
+saveas(gcf,'materials/Macbeth_no_wb.png');
 
 % Select an achromatic (gray) patch with which to white balance.
 % Let's pick the 23rd gray, with 9% reflectance but experiment with
