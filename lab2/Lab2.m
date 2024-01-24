@@ -1,8 +1,5 @@
 %LAB2
 
-%Comments:
-%What does first plot stand for? Why not print on chromaticity graph?
-
 %% Ex1
 %Import all necessary data
 refl = importdata('data/MacbethColorCheckerReflectances.csv');
@@ -48,7 +45,7 @@ title('B channel')
 legend('Nikon data','Canon data')
 xlabel('Patch #')
 ylabel('Intesnsity')
-%% Ex2  XYZ
+%% Ex2 XYZ
 % Load standard observer curves
 stdobs = importdata('data/CIEStandardObserver.csv');
 
