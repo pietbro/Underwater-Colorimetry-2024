@@ -8,7 +8,7 @@ clear;close;clc
 
 % filePath = matlab.desktop.editor.getActiveFilename;
 % folder = fileparts(which(filePath)); 
-% addpath(folder);
+% addpath(genpath(folder));
 
 %% Step 1 - Simulate a Macbeth ColorChecker
 
