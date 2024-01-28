@@ -4,15 +4,10 @@
 # Derya Akkaynak
 
 import Metashape
-importsyds
-
-
 import sys
 
-for i in range (1, len(sys.argv)):
-	arg = sys.argv[i]
-	print("Argument " + str(i) + ": " + arg+ "\n")
-
+# Output path is read from 'Arguments' Dialogue in Metashape
+path = sys.argv[1]
 
 # Select active chunk
 chunk = Metashape.app.document.chunk 
@@ -32,7 +27,5 @@ for camera in chunk.cameras:
 		depth = depth.convert(" ","F16")
 		compr = Metashape.ImageCompression()
 		compr.tiff_compression = Metashape.ImageCompression().TiffCompressionDeflate
-		# Remember to update this path according to your folders
-		depth.save("/Users/deryaakkaynak/Desktop/depth" + camera.label + ".tif", compression = compr)
 
-						
+		depth.save(path + '/' + camera.label + ".tif", compression = compr)
